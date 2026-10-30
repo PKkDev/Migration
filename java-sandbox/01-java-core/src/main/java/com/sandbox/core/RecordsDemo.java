@@ -91,7 +91,7 @@ public class RecordsDemo {
         System.out.println("dev1.equals(dev2): " + dev1.equals(dev2)); // true
 
         // Геттеры без префикса get:
-        System.out.println("Имя: " + dev1.name() + ", Опыт: " + dev1.expYears + ", Senior: " + dev1.isSenior());
+        System.out.println("Имя: " + dev1.name() + ", Опыт: " + dev1.expYears() + ", Senior: " + dev1.isSenior());
 
         // Создает новый экземпляр через клонирующий билдер:
         ModernDeveloper updated1 = dev1.toBuilder().expYears(10).build();

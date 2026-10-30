@@ -3,7 +3,7 @@ package com.sandbox.core;
 import java.util.*;
 import java.util.concurrent.*;
 
-public class Collections {
+public class CollectionsDemo {
     static void main(String[] args) {
         // В Java все структуры данных объединены в Java Collections Framework (JCF).
         // Они делятся на две основные ветви:
