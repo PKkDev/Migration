@@ -6,10 +6,7 @@ build/
 .kotlin
 
 ### IntelliJ IDEA ###
-java-sandbox/.idea/modules.xml
-java-sandbox/.idea/jarRepositories.xml
-java-sandbox/.idea/compiler.xml
-java-sandbox/.idea/libraries/
+.idea/
 *.iws
 *.iml
 *.ipr
