@@ -3,6 +3,7 @@
 * **Формат:** 1.5–2 часа в день (через день, с правом на пропуск).
 * **Структура занятия:** 45 минут — глубинная теория (internals), 45–60 минут — изолированная практика руками.
 * **Версии:** Java 25 (LTS), Gradle (Kotlin DSL), Spring Boot — актуальная ветка с [start.spring.io](https://start.spring.io). В старых статьях часто Spring Boot 3.x: различия сверяйте по release notes.
+* **Источники:** у каждого дня есть блок «Источники» (в порядке чтения, с оценкой времени); теория дня — это чтение этих материалов плюс эксперименты в коде. Блоки добавляются по мере прохождения дней. Официальная документация — [dev.java](https://dev.java) и [docs.oracle.com/en/java/javase/25](https://docs.oracle.com/en/java/javase/25/).
 * **Правило:** код пишете сами. Claude даёт советы, примеры в чате и ревью.
 * **Связь с `react-app`:** итоговый проект Фазы 2 (Дни 29–35) — это бэкенд к «Enterprise Data Panel» из дорожной карты React. Договариваемся о контракте API заранее.
 * **Что уже есть в песочнице (`01-java-core`):** типы и Integer Cache, строки, коллекции, records, sealed и pattern matching. Эти темы в плане нужно *добить*: доработать примеры, вывод и тесты.
@@ -20,6 +21,15 @@
 - [ ] **День 2: Строки и текст**
   - **Теория:** Неизменяемость и String Pool, `intern()`. Compact Strings (Latin1 против UTF-16). `char` — это UTF-16 code unit, а не символ: суррогатные пары и code points. `StringBuilder` и конкатенация в цикле (под капотом `invokedynamic`).
   - **Практика:** Посчитать частоты символов в строке с эмодзи и показать, где `length()` врёт. Замерить конкатенацию 100 000 строк через `+=` и через `StringBuilder`. Текстовые блоки и `formatted`.
+  - **Источники:**
+    - [Strings — The Java Tutorials](https://docs.oracle.com/javase/tutorial/java/data/strings.html) (10 мин)
+    - [Characters — The Java Tutorials](https://docs.oracle.com/javase/tutorial/java/data/characters.html) (5 мин)
+    - [The Absolute Minimum Every Software Developer Must Know About Unicode (Joel Spolsky)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) (20 мин)
+    - [Supplementary Characters as Surrogates — The Java Tutorials](https://docs.oracle.com/javase/tutorial/i18n/text/supplementaryChars.html) (7 мин)
+    - [JEP 254: Compact Strings](https://openjdk.org/jeps/254) (7 мин, читать «Summary» и «Motivation»)
+    - [JEP 280: Indify String Concatenation](https://openjdk.org/jeps/280) (4 мин)
+    - [Programmer's Guide to Text Blocks](https://docs.oracle.com/en/java/javase/25/text-blocks/index.html) (10 мин)
+    - [Справочник `String`, Java 25](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html) (справочно: `codePoints`, `intern`, `formatted`, `isBlank`)
 
 - [ ] **День 3: Классы, наследование, интерфейсы**
   - **Теория:** Все методы виртуальные (нет `virtual`/`override`), `final`, `abstract`, `default`-методы интерфейсов. Порядок инициализации: static-блок, поля, конструктор. Package-private вместо `internal`. Нет свойств: геттеры и сеттеры.
