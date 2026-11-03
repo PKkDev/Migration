@@ -1,4 +1,4 @@
-package com.sandbox.core;
+package com.sandbox.core.types;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;

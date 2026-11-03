@@ -1,4 +1,4 @@
-package com.sandbox.core;
+package com.sandbox.core.collections;
 
 import java.util.*;
 import java.util.concurrent.*;

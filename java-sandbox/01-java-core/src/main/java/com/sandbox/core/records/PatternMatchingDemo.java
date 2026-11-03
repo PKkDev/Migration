@@ -1,4 +1,4 @@
-package com.sandbox.core;
+package com.sandbox.core.records;
 
 /// Pattern Matching & Switch Expressions
 public class PatternMatchingDemo {

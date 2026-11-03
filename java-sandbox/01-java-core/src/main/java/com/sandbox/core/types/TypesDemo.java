@@ -1,8 +1,10 @@
-package com.sandbox.core;
+package com.sandbox.core.types;
+
+import com.sandbox.core.common.ConsoleColor;
 
 import java.util.*;
 
-public class Main {
+public class TypesDemo {
 
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.sandbox.core;
+package com.sandbox.core.records;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

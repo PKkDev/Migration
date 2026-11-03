@@ -1,4 +1,4 @@
-package com.sandbox.core;
+package com.sandbox.core.types;
 
 import java.util.Objects;
 
