@@ -49,7 +49,7 @@ public class TypesDemo {
             mapForEx.put(1, 1);
             mapForEx.get((Integer) null);
             var g = mapForEx.get(2); // Exception не будет т.к. Integer(var) допускает null
-            int v = mapForEx.get(2); // Exception будет т.к. int допускает null
+            int v = mapForEx.get(2); // Exception будет т.к. int не допускает null
         } catch (NullPointerException e) {
             ConsoleColor.redLog("catch " + NullPointerException.class.getName());
         }
@@ -57,7 +57,7 @@ public class TypesDemo {
         try {
             var flag = false;
             Integer boxed = null;
-            Integer a = flag ? 1 : null;   // boxed распаковывается в int, а int не может быть null
+            Integer a = flag ? 1 : boxed;   // boxed распаковывается в int, а int не может быть null
         } catch (NullPointerException e) {
             ConsoleColor.redLog("catch " + NullPointerException.class.getName());
         }
