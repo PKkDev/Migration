@@ -33,9 +33,20 @@
     - [Programmer's Guide to Text Blocks](https://docs.oracle.com/en/java/javase/25/text-blocks/index.html) (10 мин)
     - [Справочник `String`, Java 25](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html) (справочно: `codePoints`, `intern`, `formatted`, `isBlank`)
 
-- [ ] **День 3: Классы, наследование, интерфейсы**
+- [x] **День 3: Классы, наследование, интерфейсы**
   - **Теория:** Все методы виртуальные (нет `virtual`/`override`), `final`, `abstract`, `default`-методы интерфейсов. Порядок инициализации: static-блок, поля, конструктор. Package-private вместо `internal`. Нет свойств: геттеры и сеттеры.
   - **Практика:** `abstract class Shape`, `Circle`, `Rectangle`, интерфейс `Printable` с `default`-методом, `List<Shape>`. Воспроизвести баг: вызов переопределяемого метода из конструктора базового класса.
+  - **Источники** (теория и сравнение с C# собраны в [oop/README.md](01-java-core/src/main/java/com/sandbox/core/oop/README.md)):
+    - [Inheritance, Java Tutorials](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html) (10 мин)
+    - [Overriding and Hiding Methods, Java Tutorials](https://docs.oracle.com/javase/tutorial/java/IandI/override.html) (10 мин)
+    - [Polymorphism, Java Tutorials](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html) (8 мин)
+    - [Writing Final Classes and Methods, Java Tutorials](https://docs.oracle.com/javase/tutorial/java/IandI/final.html) (4 мин)
+    - [Abstract Methods and Classes, Java Tutorials](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html) (8 мин)
+    - [Default Methods, Java Tutorials](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html) (8 мин)
+    - [Initializing Fields, Java Tutorials](https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html) (8 мин)
+    - [Controlling Access to Members of a Class, Java Tutorials](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html) (5 мин)
+    - [JEP 513: Flexible Constructor Bodies](https://openjdk.org/jeps/513) (7 мин, новое в Java 25)
+    - [Polymorphism, C# (Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism) (10 мин, для сравнения)
 
 - [ ] **День 4: Контракт `equals` / `hashCode` / `compareTo`**
   - **Теория:** Контракт `equals`/`hashCode` и что ломается при его нарушении. Изменяемые поля в ключе `HashMap`. `Comparable` против `Comparator`. Идентичность и `identityHashCode`.
