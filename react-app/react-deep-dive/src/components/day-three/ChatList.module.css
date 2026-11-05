@@ -1,0 +1,12 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.message {
+  margin: 5px;
+  border: thin solid #ccc;
+  border-radius: 5px;
+}
