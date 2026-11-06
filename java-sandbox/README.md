@@ -48,9 +48,18 @@
     - [JEP 513: Flexible Constructor Bodies](https://openjdk.org/jeps/513) (7 мин, новое в Java 25)
     - [Polymorphism, C# (Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism) (10 мин, для сравнения)
 
-- [ ] **День 4: Контракт `equals` / `hashCode` / `compareTo`**
+- [x] **День 4: Контракт `equals` / `hashCode` / `compareTo`**
   - **Теория:** Контракт `equals`/`hashCode` и что ломается при его нарушении. Изменяемые поля в ключе `HashMap`. `Comparable` против `Comparator`. Идентичность и `identityHashCode`.
   - **Практика:** Положить объекты без `hashCode` в `HashSet` и увидеть дубли. Изменить ключ после `put` и «потерять» запись. Отсортировать список через `Comparator.comparing(...).thenComparing(...)`.
+  - **Источники** (теория и сравнение с C# собраны в [equality/README.md](01-java-core/src/main/java/com/sandbox/core/equality/README.md)):
+    - [Object as a Superclass, Java Tutorials](https://docs.oracle.com/javase/tutorial/java/IandI/objectclass.html) (10 мин)
+    - [`Object.equals` и `Object.hashCode`, Java 25](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html) (10 мин)
+    - [Object Ordering, Java Tutorials](https://docs.oracle.com/javase/tutorial/collections/interfaces/order.html) (10 мин)
+    - [`Comparator`, Java 25](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Comparator.html) (10 мин)
+    - [`Comparable`, Java 25](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html) (5 мин)
+    - [`Map`, Java 25](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.html) (3 мин, предупреждение про изменяемые ключи)
+    - [Lombok: `@EqualsAndHashCode`](https://projectlombok.org/features/EqualsAndHashCode) (5 мин)
+    - [How to define value equality for a type, C# (Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type) (10 мин, для сравнения)
 
 - [ ] **День 5: Исключения**
   - **Теория:** Checked против unchecked, `throws`. `try-with-resources` и `AutoCloseable`, suppressed exceptions. Ловушки `finally`. Цепочки `cause`. Почему нельзя глотать исключения. Как это соотносится с `using`/`try-catch` в C#.
