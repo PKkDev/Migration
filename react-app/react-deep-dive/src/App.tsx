@@ -1,7 +1,5 @@
 import "./App.css";
-import DayThree from "./components/day-three/DayThree";
-// import DayTwo from "./components/day-two/DayTwo";
-// import DayOne from "./components/day-one/DayOne";
+import DayFour from "./components/day-four/DayFour";
 
 function App() {
   return (
@@ -12,7 +10,9 @@ function App() {
 
       {/* <DayTwo/> */}
 
-      <DayThree />
+      {/* <DayThree /> */}
+
+      <DayFour />
     </>
   );
 }

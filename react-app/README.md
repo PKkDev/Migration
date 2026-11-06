@@ -56,7 +56,7 @@
     - [Manipulating the DOM with Refs](https://react.dev/learn/manipulating-the-dom-with-refs) (12 мин)
     - [useRef (справочник)](https://react.dev/reference/react/useRef) (8 мин)
 
-- [ ] **День 4: `useEffect` — модель синхронизации и StrictMode**
+- [x] **День 4: `useEffect` — модель синхронизации и StrictMode**
   - **Теория:** Почему `useEffect` — не аналог `ngOnInit`/`Form_Load`. Концепция синхронизации с внешними API/DOM. Механика функции очистки (cleanup function). `<StrictMode>`: в dev-режиме эффект намеренно запускается дважды (mount → unmount → mount), чтобы выявить отсутствующий cleanup. Статья «You Might Not Need an Effect»: что не нужно делать эффектом.
   - **Практика:** Реализовать подписку на `window.addEventListener('resize')` с обязательной отпиской в cleanup. Написать запрос к API через `fetch` с отменой через `AbortController`. Увидеть двойной вызов эффекта в StrictMode и убедиться, что cleanup делает его безвредным.
   - **Источники:**
