@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.active {
+  color: red;
+}
+.pending {
+  color: blue;
+}

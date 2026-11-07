@@ -1,3 +1,4 @@
+import CardView from "../base/CardView";
 import Card from "./Card";
 import Greeting from "./Greeting";
 import GreetingCreateElement from "./GreetingCreateElement";
@@ -10,33 +11,45 @@ function DayOne() {
 
   return (
     <>
-      <h1>Hello</h1>
+      <CardView title="View Not View">
+        {/*оператор возвращает первый ложный операнд, то есть тот же 0 ||| 0 - falsy => false => 0*/}
+        {dd && <b>видно</b>}
 
-      {/*оператор возвращает первый ложный операнд, то есть тот же 0 ||| 0 - falsy => false => 0*/}
-      {dd && <b>видно</b>}
+        {/* 0 - falsy => false =>  не видно*/}
+        {dd ? <b>видно</b> : <b>не видно</b>}
+      </CardView>
 
-      {/* 0 - falsy => false =>  не видно*/}
-      {dd ? <b>видно</b> : <b>не видно</b>}
-
-      <GreetingCreateElement />
-
-      <Card title="basic title">Test1</Card>
-
-      <Card title="Title with Greeting">
+      <CardView title="GreetingCreateElement">
         <GreetingCreateElement />
-      </Card>
+      </CardView>
 
-      <Greeting />
+      <CardView title="Card">
+        <Card title="basic title">Test1</Card>
+      </CardView>
 
-      <ListView
-        items={[1, 2, 3]}
-        renderItem={(number) => <span>{number * number}</span>}
-      />
+      <CardView title="Card + GreetingCreateElement">
+        <Card title="Title with Greeting">
+          <GreetingCreateElement />
+        </Card>
+      </CardView>
 
-      <ListView
-        items={["John", "Jane", "Bob"]}
-        renderItem={(name) => <b>{name}</b>}
-      />
+      <CardView title="Greeting">
+        <Greeting />
+      </CardView>
+
+      <CardView title="ListView NUMBER">
+        <ListView
+          items={[1, 2, 3]}
+          renderItem={(number) => <span>{number * number}</span>}
+        />
+      </CardView>
+
+      <CardView title="ListView STRING">
+        <ListView
+          items={["John", "Jane", "Bob"]}
+          renderItem={(name) => <b>{name}</b>}
+        />
+      </CardView>
     </>
   );
 }

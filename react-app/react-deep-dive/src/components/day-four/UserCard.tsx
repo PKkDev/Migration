@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import ButtonsRow from "../base/ButtonsRow";
 import type { UserDto } from "./models/User";
 
 function UserCard() {
@@ -57,7 +58,7 @@ function UserCard() {
         </div>
       )}
 
-      <div>
+      <ButtonsRow>
         <button
           disabled={userId <= 1}
           onClick={() => setUserId((prev) => prev - 1)}
@@ -71,7 +72,7 @@ function UserCard() {
           next
         </button>
         <p>id: {userId}</p>
-      </div>
+      </ButtonsRow>
     </>
   );
 }
