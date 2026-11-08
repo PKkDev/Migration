@@ -61,9 +61,19 @@
     - [Lombok: `@EqualsAndHashCode`](https://projectlombok.org/features/EqualsAndHashCode) (5 мин)
     - [How to define value equality for a type, C# (Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type) (10 мин, для сравнения)
 
-- [ ] **День 5: Исключения**
+- [x] **День 5: Исключения**
   - **Теория:** Checked против unchecked, `throws`. `try-with-resources` и `AutoCloseable`, suppressed exceptions. Ловушки `finally`. Цепочки `cause`. Почему нельзя глотать исключения. Как это соотносится с `using`/`try-catch` в C#.
   - **Практика:** Иерархия собственных исключений. Ресурс, у которого `close()` тоже бросает исключение, и вывод suppressed. Обернуть checked-исключение в unchecked с сохранением `cause`.
+  - **Источники** (теория и сравнение с C# собраны в [exceptions/README.md](01-java-core/src/main/java/com/sandbox/core/exceptions/README.md)):
+    - [Lesson: Exceptions, Java Tutorials](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html) (10 мин)
+    - [The Catch or Specify Requirement](https://docs.oracle.com/javase/tutorial/essential/exceptions/catch.html) (7 мин)
+    - [The finally Block](https://docs.oracle.com/javase/tutorial/essential/exceptions/finally.html) (5 мин)
+    - [The try-with-resources Statement](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html) (10 мин)
+    - [Unchecked Exceptions: The Controversy](https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html) (5 мин)
+    - [Creating Exception Classes](https://docs.oracle.com/javase/tutorial/essential/exceptions/creating.html) (5 мин)
+    - [Chained Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/chained.html) (4 мин)
+    - [Exception handling, C# (Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/) (10 мин, для сравнения)
+    - [Best practices for exceptions, .NET (Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions) (10 мин, для сравнения)
 
 - [ ] **День 6: Дженерики и стирание типов**
   - **Теория:** Type erasure: в рантайме нет `List<String>`, есть `List`. Нет `List<int>` (в C# дженерики reified). Wildcards и правило PECS: `? extends` / `? super`. Heap pollution.
