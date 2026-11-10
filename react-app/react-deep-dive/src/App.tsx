@@ -1,5 +1,7 @@
 import { NavLink, Outlet, type NavLinkRenderProps } from "react-router";
 import styles from "./App.module.css";
+import AuthProvider from "./components/day-six/Contexts/AuthContext/AuthProvider";
+import NotifProvider from "./components/day-six/Contexts/NotifContext/NotifProvider";
 
 function activeClass(param: NavLinkRenderProps) {
   return param.isActive ? styles.active : param.isPending ? styles.pending : "";
@@ -27,11 +29,18 @@ function App() {
         <NavLink to="/day-five" className={activeClass} end>
           День 5
         </NavLink>
+        <NavLink to="/day-six" className={activeClass} end>
+          День 6
+        </NavLink>
       </nav>
 
       <h2>MAIN</h2>
 
-      <Outlet />
+      <AuthProvider>
+        <NotifProvider>
+          <Outlet />
+        </NotifProvider>
+      </AuthProvider>
     </>
   );
 }

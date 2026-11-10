@@ -78,6 +78,18 @@
 - [ ] **День 6: Дженерики и стирание типов**
   - **Теория:** Type erasure: в рантайме нет `List<String>`, есть `List`. Нет `List<int>` (в C# дженерики reified). Wildcards и правило PECS: `? extends` / `? super`. Heap pollution.
   - **Практика:** Написать `Pair<A, B>` и `Result<T>`. Метод `copy(List<? super T> dst, List<? extends T> src)`. Показать через `getClass()`, что `List<String>` и `List<Integer>` — один класс.
+  - **Источники** (теория и сравнение с C# собраны в [generics/README.md](01-java-core/src/main/java/com/sandbox/core/generics/README.md)):
+    - [Generic Types](https://docs.oracle.com/javase/tutorial/java/generics/types.html) (7 мин)
+    - [Generic Methods](https://docs.oracle.com/javase/tutorial/java/generics/methods.html) (5 мин)
+    - [Bounded Type Parameters](https://docs.oracle.com/javase/tutorial/java/generics/bounded.html) (7 мин)
+    - [Generics, Inheritance, and Subtypes](https://docs.oracle.com/javase/tutorial/java/generics/inheritance.html) (5 мин)
+    - [Upper Bounded Wildcards](https://docs.oracle.com/javase/tutorial/java/generics/upperBounded.html) (5 мин)
+    - [Lower Bounded Wildcards](https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html) (4 мин)
+    - [Wildcard Guidelines](https://docs.oracle.com/javase/tutorial/java/generics/wildcardGuidelines.html) (5 мин, PECS)
+    - [Type Erasure](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) (10 мин)
+    - [Restrictions on Generics](https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html) (10 мин)
+    - [Non-Reifiable Types, Heap Pollution](https://docs.oracle.com/javase/tutorial/java/generics/nonReifiableVarargsType.html) (7 мин)
+    - [Covariance and contravariance, .NET (Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/standard/generics/covariance-and-contravariance) (10 мин, для сравнения)
 
 - [ ] **День 7: Практикум недели — моделирование домена**
   - **Теория:** `record`, `enum` с полями и методами, `sealed` + pattern matching, `switch`-выражения, `Optional` (когда уместен, когда нет).

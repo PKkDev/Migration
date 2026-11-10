@@ -76,7 +76,7 @@
     - [Making setInterval Declarative with React Hooks (Dan Abramov)](https://overreacted.io/making-setinterval-declarative-with-react-hooks/) (20 мин)
     - [State as a Snapshot (повторить)](https://react.dev/learn/state-as-a-snapshot) (5 мин)
 
-- [ ] **День 6: `useContext` — передача контекста через дерево**
+- [x] **День 6: `useContext` — передача контекста через дерево**
   - **Теория:** Решение проблемы «prop drilling». Проблема каскадных ререндеров: почему изменение одного поля в контексте перерисовывает всех потребителей хука. Чтение контекста через `use(Context)` в React 19.
   - **Практика:** Создать контекст авторизации или темы оформления. Написать обёртку-хук с проверкой контекста на `null` с выбросом типизированной ошибки при вызове вне провайдера.
   - **Источники:**
