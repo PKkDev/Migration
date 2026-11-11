@@ -75,7 +75,7 @@
     - [Exception handling, C# (Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/) (10 мин, для сравнения)
     - [Best practices for exceptions, .NET (Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions) (10 мин, для сравнения)
 
-- [ ] **День 6: Дженерики и стирание типов**
+- [x] **День 6: Дженерики и стирание типов**
   - **Теория:** Type erasure: в рантайме нет `List<String>`, есть `List`. Нет `List<int>` (в C# дженерики reified). Wildcards и правило PECS: `? extends` / `? super`. Heap pollution.
   - **Практика:** Написать `Pair<A, B>` и `Result<T>`. Метод `copy(List<? super T> dst, List<? extends T> src)`. Показать через `getClass()`, что `List<String>` и `List<Integer>` — один класс.
   - **Источники** (теория и сравнение с C# собраны в [generics/README.md](01-java-core/src/main/java/com/sandbox/core/generics/README.md)):
