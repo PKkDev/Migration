@@ -15,7 +15,7 @@ function NotifProvider({ children }: PanelProps) {
 
   const value = useMemo(
     () => {
-      console.log("NotifProvider: value пересчитан");
+      // console.log("NotifProvider: value пересчитан");
       return { notifications, updateNotifications };
     }, // функция, которая вычисляет значение
     [notifications, updateNotifications], // зависимости

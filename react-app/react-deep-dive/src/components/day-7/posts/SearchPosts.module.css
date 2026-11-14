@@ -1,0 +1,8 @@
+.postBoard {
+  overflow: auto;
+  max-height: 450px;
+}
+
+.post {
+  margin-bottom: 10px;
+}

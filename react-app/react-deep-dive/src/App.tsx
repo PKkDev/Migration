@@ -32,6 +32,9 @@ function App() {
         <NavLink to="/day-six" className={activeClass} end>
           День 6
         </NavLink>
+        <NavLink to="/day-seven" className={activeClass} end>
+          День 7
+        </NavLink>
       </nav>
 
       <h2>MAIN</h2>
